@@ -42,4 +42,29 @@
     </plugins>
   </build>
 
+  <licenses>
+    <license>
+      <name>2-clause BSD license</name>
+      <distribution>repo</distribution>
+      <url>http://opensource.org/licenses/bsd-license.php</url>
+    </license>
+  </licenses>
+
+  <scm>
+    <connection>scm:git:git://github.com/stapler/guice-extensibility.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/stapler/guice-extensibility.git</developerConnection>
+    <url>https://github.com/stapler/guice-extensibility</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <distributionManagement>
+    <snapshotRepository>
+      <id>maven.jenkins-ci.org</id>
+      <url>http://maven.jenkins-ci.org:8081/content/repositories/snapshots/</url>
+    </snapshotRepository>
+    <site>
+      <id>github-pages</id>
+      <url>gitsite:git@github.com/stapler/guice-extensibility.git</url>
+    </site>
+  </distributionManagement>
 </project>
