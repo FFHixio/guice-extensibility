@@ -45,7 +45,7 @@ public abstract class ExtensibleWebAppMain<T> extends AbstractWebAppMain<T> {
             }
         };
 
-        for (Startable s : new ExtensionList<>(Startable.class).list(injector)) {
+        for (Startable s : new ExtensionList<Startable>(Startable.class).list(injector)) {
             try {
                 s.start();
             } catch (Exception e) {
@@ -60,7 +60,7 @@ public abstract class ExtensibleWebAppMain<T> extends AbstractWebAppMain<T> {
         world = createWorld();
         Thread.currentThread().setContextClassLoader(world);
 
-        List<Module> modules = new ArrayList<>();
+        List<Module> modules = new ArrayList<Module>();
         assembleModules(modules);
         return Guice.createInjector(modules);
     }
