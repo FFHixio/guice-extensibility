@@ -73,6 +73,8 @@ public abstract class ExtensibleWebAppMain<T> extends AbstractWebAppMain<T> {
                 bind(ClassLoader.class).toInstance(world);
                 bind(ServletContext.class).toInstance(context);
                 bind(rootType);
+                bind(Object.class).annotatedWith(StaplerRoot.class).to(rootType);
+                bind(ExtensibleWebAppMain.class).toInstance(ExtensibleWebAppMain.this);
             }
         });
     }
