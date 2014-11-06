@@ -72,7 +72,7 @@ public abstract class ExtensibleWebAppMain<T> extends AbstractWebAppMain<T> {
             protected void configure() {
                 bind(ClassLoader.class).toInstance(world);
                 bind(ServletContext.class).toInstance(context);
-                bind(rootType).to(rootType);
+                bind(rootType);
             }
         });
     }
