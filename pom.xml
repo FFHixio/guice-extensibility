@@ -9,7 +9,7 @@
 
   <groupId>org.kohsuke.stapler</groupId>
   <artifactId>stapler-guice-extensibility</artifactId>
-  <version>1.2-SNAPSHOT</version>
+  <version>1.2</version>
 
   <name>Stapler + Guice + CloudBees Extensibility API</name>
 
